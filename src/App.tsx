@@ -11,7 +11,6 @@ import Academics from './sections/Academics';
 import DesignWork from './sections/DesignWork';
 import Certifications from './sections/Certifications';
 import References from './sections/References';
-import Footer from './sections/Footer';
 
 const SECTIONS = [
   { id: 'about', component: About },
@@ -79,7 +78,6 @@ export default function App() {
         ))}
       </main>
 
-      <Footer />
     </div>
   );
 }
