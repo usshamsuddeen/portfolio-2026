@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pub-0",
+    "code": "P1",
+    "title": "Comparative analysis on AI-driven human digital twin for personalized and predictive medicine",
+    "authors": "Muhammad Usman Shams",
+    "journal": "Journal of Clinical Practice and Medical Research",
+    "year": "2025",
+    "doi": "10.59324/jcpmr.2025.1(1).06",
+    "doiUrl": "https://doi.org/10.59324/jcpmr.2025.1(1).06"
+  },
+  {
+    "id": "pub-1",
+    "code": "P2",
+    "title": "Rolling Bearing Fault Detection using Deep Learning Model: Intelligent Manufacturing Industry 4.0 / 5.0",
+    "authors": "Muhammad Usman Shams",
+    "journal": "Scientia. Technology, Science and Society",
+    "year": "2024",
+    "doi": "10.59324/stss.2024.1(3).06",
+    "doiUrl": "https://doi.org/10.59324/stss.2024.1(3).06"
+  }
+]
