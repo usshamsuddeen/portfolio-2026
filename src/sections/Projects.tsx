@@ -10,8 +10,8 @@ export default function Projects() {
     // Pre-fetch READMEs for all projects to ensure instantaneous "Reveal Code" experience
     projects.forEach(project => {
       if (project.repoName) {
-        // Fetch root README.md (encoded as UkVBRE1FLm1k)
-        fetch(`/snapshots/${project.repoName}/files/UkVBRE1FLm1k.json`).catch(() => {});
+        // Pre-fetch live README via our secure proxy
+        fetch(`/api/github/file/${project.repoName}/README.md`).catch(() => {});
       }
     });
   }, []);

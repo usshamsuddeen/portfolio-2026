@@ -240,7 +240,7 @@ export const experiences: Experience[] = [
     status: "Project Based",
     highlights: [
       "Completed 9+ ML research projects in under 16 months",
-      "Wrote 4 published papers in top journals like IEEE, SJER, and STSS",
+      "4 published papers in top journals like IEEE, SJER, and STSS",
       "Built new deep learning models to predict battery health and lifespan",
       "Created KAN-based vehicle communication models using Digital Twin tech",
       "Presented research as an invited speaker at IEEE EIC Conference 2025",
