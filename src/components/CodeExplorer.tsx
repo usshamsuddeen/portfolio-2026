@@ -64,6 +64,13 @@ export default function CodeExplorer({ repoId, onClose }: CodeExplorerProps) {
           description: 'Fetching live repository data...',
           url: `https://github.com/usshamsuddeen/${repoId}`
         });
+
+        if (treeRes.error || !Array.isArray(treeRes)) {
+          console.error("Failed to load tree:", treeRes);
+          setTree([]);
+          return;
+        }
+
         setTree(treeRes);
         
         // Advanced README Selection Strategy

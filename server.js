@@ -30,10 +30,16 @@ app.get('/api/github/tree/:repo', async (req, res) => {
   const owner = process.env.GITHUB_OWNER || 'usshamsuddeen';
 
   try {
+    const repoInfo = await octokit.rest.repos.get({
+      owner,
+      repo,
+    });
+    const defaultBranch = repoInfo.data.default_branch;
+
     const { data } = await octokit.rest.git.getTree({
       owner,
       repo,
-      tree_sha: 'main',
+      tree_sha: defaultBranch,
       recursive: true,
     });
     res.json(data.tree);
