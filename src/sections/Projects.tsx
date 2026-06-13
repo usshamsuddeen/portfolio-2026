@@ -1,21 +1,6 @@
 import { projects } from '../data/content';
 import { ExternalLink, FileText, Code2 } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import CodeExplorer from '../components/CodeExplorer';
-
 export default function Projects() {
-  const [activeRepoId, setActiveRepoId] = useState<string | null>(null);
-
-  useEffect(() => {
-    // Pre-fetch READMEs for all projects to ensure instantaneous "Reveal Code" experience
-    projects.forEach(project => {
-      if (project.repoName) {
-        // Pre-fetch live README via our secure proxy
-        fetch(`/api/github/file/${project.repoName}/README.md`).catch(() => {});
-      }
-    });
-  }, []);
-
   return (
     <section id="projects">
       <div className="max-w-[1200px] mx-auto border-x border-b" style={{ borderColor: 'var(--border-color)' }}>
@@ -90,14 +75,16 @@ export default function Projects() {
                 <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 border-t" style={{ borderColor: 'var(--border-color)' }}>
                   {/* GitHub Reveal Button */}
                   {project.repoName && (
-                    <button
-                      onClick={() => setActiveRepoId(project.repoName!)}
+                    <a
+                      href={`https://github.com/usshamsuddeen/${project.repoName}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[10px] tracking-wider uppercase font-extrabold flex items-center gap-1.5 hover:opacity-70 transition-opacity"
                       style={{ color: 'var(--accent)' }}
                     >
                       <Code2 size={13} strokeWidth={2} />
                       Reveal Code
-                    </button>
+                    </a>
                   )}
 
                   {project.links.map((link) => (
@@ -124,13 +111,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Code Explorer Modal */}
-        {activeRepoId && (
-          <CodeExplorer 
-            repoId={activeRepoId} 
-            onClose={() => setActiveRepoId(null)} 
-          />
-        )}
       </div>
     </section>
   );
