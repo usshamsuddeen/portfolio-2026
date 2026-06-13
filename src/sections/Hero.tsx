@@ -51,7 +51,7 @@ export default function Hero() {
                 <p className="text-[9px] uppercase tracking-widest mt-1" style={{ color: 'var(--fg-secondary)' }}>ML Projects</p>
               </div>
               <div>
-                <p className="text-[28px] md:text-[36px] font-bold tracking-tighter leading-none">3.70</p>
+                <p className="text-[28px] md:text-[36px] font-bold tracking-tighter leading-none">3.67</p>
                 <p className="text-[9px] uppercase tracking-widest mt-1" style={{ color: 'var(--fg-secondary)' }}>CGPA</p>
               </div>
               <div>
