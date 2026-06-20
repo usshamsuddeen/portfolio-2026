@@ -22,7 +22,7 @@ export default function About() {
               with a proven track record of delivering internationally published research and production-grade AI
               architectures. Currently serving as Research Lead at Beijing Institute of Technology (Project Base)
               and Senior UI/UX Designer at GTech Solutions, navigating complex global collaborations while
-              completing my BS in Software Engineering (Top 1% rank, CGPA 3.67). Author of 4 peer-reviewed
+              completing my BS in Software Engineering (Top 1% rank, CGPA 3.68). Author of 4 peer-reviewed
               journals with a specialized focus on Digital Twin systems and Healthcare AI.
             </p>
 

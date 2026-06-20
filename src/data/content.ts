@@ -284,7 +284,7 @@ export const educations: Education[] = [
     degree: "BS Software Engineering",
     school: "Khwaja Fareed University of Engineering & Information Technology (KFUEIT)",
     period: "2022 – 2026 (Expected)",
-    details: "CGPA: 3.67 / 4.00 · Class Rank: 4th / Batch · Dean's Honor Certificate",
+    details: "CGPA: 3.68 / 4.00 · Class Rank: 4th / Batch · Dean's Honor Certificate",
   },
   {
     degree: "Intermediate — Bio Sciences",
@@ -305,7 +305,7 @@ export const awards: Award[] = [
     title: "Rank 4th — BS Software Engineering",
     date: "2022 – 2026",
     issuer: "KFUEIT",
-    description: "Class Rank 4th in entire batch of 2022–2026, CGPA 3.67/4.00",
+    description: "Class Rank 4th in entire batch of 2022–2026, CGPA 3.68/4.00",
   },
   {
     title: "HEC PMYP Laptop Award",
